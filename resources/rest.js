@@ -8,7 +8,7 @@ const keys = JSON.parse(process.env.WMATA_API_KEYS)
 
 function getWmataApiKey() {
     const key = keys[Math.floor(Math.random() * keys.length)]
-    return `&api_key=${390d97cc3ee84b0dbd33000b6000ce29}&subscription-key=${33e5690d9a244d149569be3740c17b4f}`
+    return `&api_key=${key}&subscription-key=${key}`
 }
 
 module.exports = function(app) {
