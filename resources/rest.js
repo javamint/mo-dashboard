@@ -4,13 +4,13 @@ const Forecast = require('forecast.io')
 const xml      = require('xml2js')
 const _        = require('lodash')
 
-const keys = JSON.parse(process.env.WMATA_API_KEYS)
-
-function getWmataApiKey() {
-    const key = keys[Math.floor(Math.random() * keys.length)]
-    return `&api_key=${key}&subscription-key=${key}`
+const getWmataApiKey = function () {
+	var keys = [
+		'390d97cc3ee84b0dbd33000b6000ce29', // TransitDashKey0
+		'33e5690d9a244d149569be3740c17b4f'  // TransitDashKey1
+	];
 }
-
+	
 module.exports = function(app) {
     'use strict';
 
