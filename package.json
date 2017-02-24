@@ -1,12 +1,27 @@
 {
-  "name": "metropolitan-overlook-dashboard",
-  "version": "0.0.1",
+  "name": "mo-dashboard",
+  "version": "0.0.0",
+  "description": "Transit dashboard I built for my condo building.",
+  "main": "app.js",
   "dependencies": {
-    "angular": "^1.4.9",
-    "angular-simple-logger": "^0.1.7",
-    "express": "^4.13.4",
-    "forecast.io": "0.0.9",
-    "lodash": "^4.10.0",
-    "xml2js": "^0.4.16"
+    "angular": "~1.5.3",
+    "angular-simple-logger": "~0.1.7",
+    "express": "~4.13.4",
+    "forecast.io": "~0.0.9",
+    "lodash": "~4.10.0",
+    "xml2js": "~0.4.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timothyeburke/mo-dashboard.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/timothyeburke/mo-dashboard/issues"
   }
 }
