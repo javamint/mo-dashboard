@@ -250,9 +250,9 @@ module.exports = function(app) {
                 })
             })
         }
-        fetchPredictions('B35')
-        fetchPredictions('B04')
-        fetchPredictions('E02')
+        fetchPredictions('A01')
+        fetchPredictions('B01')
+        fetchPredictions('B03')
     }
     getTrainPredictions()
     setInterval(getTrainPredictions, 1000 * 90)
