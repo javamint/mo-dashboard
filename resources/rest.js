@@ -143,9 +143,9 @@ module.exports = function(app) {
                 })
             })
         }
-        fetchPredictions(1001624, 'south')
-        fetchPredictions(1001425, 'toUSt')
-        fetchPredictions(1001715, 'G8West')
+        fetchPredictions(1001110, 'west')
+        fetchPredictions(1001124, 'east')
+        fetchPredictions(1001106, 'north')
     }
     getBusPredictions()
     setInterval(getBusPredictions, 1000 * 30)
@@ -353,7 +353,7 @@ module.exports = function(app) {
         res.contentType('application/json')
         res.send({
             bikeshare:  db.bikeshare,
-            busses:    [db.south, db.toUSt, db.G8West],
+            busses:    [db.west, db.east, db.north],
             car2go:     db.car2go,
             incidents:  db.incidents,
             liveBusses: db.liveBusses,
