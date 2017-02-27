@@ -39,7 +39,7 @@ module.exports = function(app) {
             Predictions: [],
             StationName: 'Metro Center LL'
         },
-        B01: { // Gallery Place
+        F01: { // Gallery Place
             Predictions: [],
             StationName: 'Gallery Place / Chinatown'
         },
@@ -251,8 +251,8 @@ module.exports = function(app) {
             })
         }
         fetchPredictions('A01')
-        fetchPredictions('B01')
-        fetchPredictions('B03')
+        fetchPredictions('C01')
+        fetchPredictions('F01')
     }
     getTrainPredictions()
     setInterval(getTrainPredictions, 1000 * 90)
@@ -357,7 +357,7 @@ module.exports = function(app) {
             car2go:     db.car2go,
             incidents:  db.incidents,
             liveBusses: db.liveBusses,
-            trains:    [db.A01, db.C01, db.B01],
+            trains:    [db.A01, db.C01, db.F01],
             weather:    db.weather
         })
     })
