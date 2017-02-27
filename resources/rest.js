@@ -6,10 +6,18 @@ const _        = require('lodash')
 
 const keys = JSON.parse(process.env.WMATA_API_KEYS)
 
+const weatherKeys = JSON.parse(process.env.DARK_SKY_API_KEY)
+
 function getWmataApiKey() {
     const key = keys[Math.floor(Math.random() * keys.length)]
     return `&api_key=${key}&subscription-key=${key}`
 }
+
+function getWeatherApiKey() {
+    const weatherKey = weatherKeys[Math.floor(Math.random() * weatherKeys.length)]
+    return `${weatherKey}`
+}
+
 
 module.exports = function(app) {
     'use strict';
@@ -192,7 +200,7 @@ module.exports = function(app) {
     function getWeather() {
         const lon = -77.0033354
         const lat =  38.9152131
-        const forecast_key = '2cb1727e2157365c87d67c621ec1bf43'
+        const forecast_key = '${getWeatherApiKey()}'
 
         const forecast = new Forecast({
             APIKey: forecast_key
