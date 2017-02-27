@@ -15,10 +15,10 @@ dashboardApp.controller('DashboardController', function($scope, $http, $timeout)
 			longitude: -77.0289
 		},
 		MO: {
-			latitude:   38.899460,
-			longitude: -77.028914
+			latitude:   38.899599,
+			longitude: -77.029264
 		},
-		zoom: 16
+		zoom: 17
 	}
 
 	var map = L.map('map').setView([$scope.map.center.latitude, $scope.map.center.longitude], $scope.map.zoom)
