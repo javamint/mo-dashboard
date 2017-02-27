@@ -1551,7 +1551,8 @@ header {
 
 #incidents {
   width: 100%;
-  background-color: #c8002c; }
+  background-color: #c8002c; 
+  color: white;}
   #incidents .label {
     vertical-align: top;
     display: inline-block;
