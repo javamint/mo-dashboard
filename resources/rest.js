@@ -31,17 +31,17 @@ module.exports = function(app) {
             Predictions: [],
             StopName: ''
         },
-        B35: { // New York Ave Metro
+        A01: { // Metro Center
             Predictions: [],
-            StationName: 'New York Ave'
+            StationName: 'Metro Center'
         },
-        B04: { // Rhode Island Ave Metro
+        B01: { // Gallery Place
             Predictions: [],
-            StationName: 'Rhode Island Ave'
+            StationName: 'Gallery Place / Chinatown'
         },
-        E02: { // Shaw Metro
+        B03: { // Union Station
             Predictions: [],
-            StationName: 'Shaw / Howard U'
+            StationName: 'Union Station'
         },
         liveBusses: [],
         bikeshare: [],
@@ -51,10 +51,10 @@ module.exports = function(app) {
     }
 
     const bbox = {
-        westLon:  -77.012500,
-        eastLon:  -76.997900,
-        southLat:  38.908567,
-        northLat:  38.920694
+        westLon:  -77.036773,
+        eastLon:  -77.003994,
+        southLat:  38.891489,
+        northLat:  38.907956
     }
 
     function isInBbox(lon, lat, westLon, eastLon, southLat, northLat) {
