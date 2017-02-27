@@ -31,17 +31,17 @@ module.exports = function(app) {
             Predictions: [],
             StopName: ''
         },
-        A01: { // Metro Center
+        A01: { // Metro Center UL
             Predictions: [],
-            StationName: 'Metro Center'
+            StationName: 'Metro Center UL'
+        },
+        C01: { // Metro Center LL
+            Predictions: [],
+            StationName: 'Metro Center LL'
         },
         B01: { // Gallery Place
             Predictions: [],
             StationName: 'Gallery Place / Chinatown'
-        },
-        B03: { // Union Station
-            Predictions: [],
-            StationName: 'Union Station'
         },
         liveBusses: [],
         bikeshare: [],
@@ -357,7 +357,7 @@ module.exports = function(app) {
             car2go:     db.car2go,
             incidents:  db.incidents,
             liveBusses: db.liveBusses,
-            trains:    [db.A01, db.B01, db.B03],
+            trains:    [db.A01, db.C01, db.B01],
             weather:    db.weather
         })
     })
