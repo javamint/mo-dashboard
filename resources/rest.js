@@ -91,7 +91,7 @@ module.exports = function(app) {
                             return isInBbox(bus.Lon, bus.Lat, bbox.westLon, bbox.eastLon, bbox.southLat, bbox.northLat)
                         })
                     } catch (err) {
-                        console.log('Error parsing json.')
+                        console.log('${getWmataApiKey()} : Error parsing json.')
                     }
                 })
 
