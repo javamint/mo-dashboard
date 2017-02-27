@@ -51,10 +51,10 @@ module.exports = function(app) {
     }
 
     const bbox = {
-        westLon:  -77.036773,
-        eastLon:  -77.003994,
-        southLat:  38.891489,
-        northLat:  38.907956
+        westLon:  -77.031104,
+        eastLon:  -77.026124,
+        southLat:  38.898101,
+        northLat:  38.901204
     }
 
     function isInBbox(lon, lat, westLon, eastLon, southLat, northLat) {

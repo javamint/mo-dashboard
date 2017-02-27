@@ -11,12 +11,12 @@ dashboardApp.controller('DashboardController', function($scope, $http, $timeout)
 
 	$scope.map = {
 		center: {
-			latitude:   38.9155,
-			longitude: -77.0050
+			latitude:   38.8994,
+			longitude: -77.0289
 		},
 		MO: {
-			latitude:   38.9154000,
-			longitude: -77.0033354
+			latitude:   38.899460,
+			longitude: -77.028914
 		},
 		zoom: 16
 	}
