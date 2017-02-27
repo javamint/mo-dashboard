@@ -66,7 +66,7 @@ module.exports = function(app) {
             const options = {
                 hostname: 'api.wmata.com',
                 port: 443,
-                path: `/Bus.svc/json/jBusPositions?RouteID&Lat=38.9155&Lon=-77.0050&Radius=1600${getWmataApiKey()}`,
+                path: `/Bus.svc/json/jBusPositions?RouteID=P6&Lat=38.9155&Lon=-77.0050&Radius=1600${getWmataApiKey()}`,
                 method: 'GET'
             }
 
