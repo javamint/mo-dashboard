@@ -200,7 +200,7 @@ module.exports = function(app) {
     function getWeather() {
         const lon = -77.0033354
         const lat =  38.9152131
-        const forecast_key = '${getWeatherApiKey()}'
+        const forecast_key = JSON.parse(process.env.DARK_SKY_API_KEY)
 
         const forecast = new Forecast({
             APIKey: forecast_key
