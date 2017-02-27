@@ -357,7 +357,7 @@ module.exports = function(app) {
             car2go:     db.car2go,
             incidents:  db.incidents,
             liveBusses: db.liveBusses,
-            trains:    [db.B35, db.B04, db.E02],
+            trains:    [db.A01, db.B01, db.B03],
             weather:    db.weather
         })
     })
