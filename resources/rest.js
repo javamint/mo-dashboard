@@ -42,7 +42,7 @@ module.exports = function(app) {
         },
         F01: { // Gallery Place
             Predictions: [],
-            StationName: 'Gallery Place / Chinatown'
+            StationName: 'Gallery Place'
         },
         liveBusses: [],
         bikeshare: [],
