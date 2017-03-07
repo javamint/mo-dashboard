@@ -1,4 +1,4 @@
 # mo-dashboard
-Transit dashboard I built for my condo building. 
+Transit dashboard created for display at the DowntownDC BID offices. The dashboard was forked from mo-dashboard by timothyeburke.
 
-[http://dashboard.timburke.co](http://dashboard.timburke.co) 
+[http://murmuring-atoll-46115.herokuapp.com](http://murmuring-atoll-46115.herokuapp.com)
